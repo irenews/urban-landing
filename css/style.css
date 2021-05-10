@@ -1,0 +1,134 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Red+Hat+Display:wght@400;500;700&display=swap");
+/* Colors */
+/* Sizes */
+/* Breakpoints */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  height: 60px;
+}
+header nav #logo {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+header nav #menu i {
+  font-size: 1.8rem;
+}
+header #banner {
+  background-image: url("/img/dk-verne-ho-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  z-index: 99;
+}
+header #banner .title {
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+}
+header #banner .title h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 3.5rem;
+  line-height: 3rem;
+  margin-bottom: 20px;
+}
+header #banner .title p {
+  font-size: 16px;
+  line-height: 20px;
+}
+@media (max-width: 960px) {
+  header #banner .title {
+    width: 70%;
+  }
+  header #banner .title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+  header #banner .title p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  header #banner {
+    height: 300px;
+  }
+  header #banner .title {
+    top: 25%;
+  }
+}
+
+#cards {
+  color: #fff;
+  margin-top: -60px;
+}
+#cards .card {
+  padding: 20px;
+  width: 300px;
+  height: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+#cards .card h2 {
+  padding: 20px 0;
+  position: relative;
+}
+#cards .card h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 40%;
+  height: 2px;
+  background-color: #fff;
+}
+#cards .box::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: -18px;
+  width: 300px;
+  height: 180px;
+  background-color: #DB1526;
+  z-index: -99;
+}
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #2B2934;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-1000 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bg-black {
+  background-color: #2B2934;
+}
+
+/*# sourceMappingURL=style.css.map */

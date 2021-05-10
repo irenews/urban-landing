@@ -1,0 +1,39 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Red+Hat+Display:wght@400;500;700&display=swap');
+
+$font:'Barlow Condensed', sans-serif;
+$h1:'Red Hat Display', sans-serif;
+
+/* Colors */
+$white: #fff;
+$light:#F5F9FA;
+$red: #DB1526;
+$violet: #37334E;
+$black: #2B2934;
+
+/* Sizes */
+$p100: 100%;
+$p50: 50%;
+$rem1: 1rem;
+$rem12: 1.2rem;
+$rem13: 1.3rem;
+$rem15: 1.5rem;
+$rem15: 1.8rem;
+$rem2: 2rem;
+$rem25: 2.5rem;
+$rem3: 3rem;
+$rem35: 3.5rem;
+
+$m-auto: 0 auto;
+
+/* Breakpoints */
+$bp-1400: 1400px;
+$bp-1200: 1200px;
+$bp-1000: 1000px;
+$bp-960: 960px;
+$bp-720: 720px;
+$bp-600: 600px;
+
+
+

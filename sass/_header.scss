@@ -1,0 +1,77 @@
+header {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        height: 60px;
+
+        #logo {
+            font-family: $h1;
+            font-size: $rem1;
+            font-weight: 700;
+        }
+
+        #menu i {
+            font-size: $rem15;
+        }
+    }
+
+    #banner {
+        background-image: url("/img/dk-verne-ho-banner.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 500px;
+        z-index: 99;
+
+        .title {
+            width: $p50;
+            color: $white;
+            text-align: center;
+            position: absolute;
+            top: 35%;
+            left: $p50;
+            transform: translate(-50%, -45%);
+
+            h1 {
+                font-family: $h1;
+                font-size: $rem35;
+                line-height: $rem3;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 20px;
+            }
+            
+        }
+        @media (max-width: $bp-960) {
+            .title {
+                width: 70%;
+
+                h1 {
+                    font-size: $rem25;
+                    margin-bottom: 0;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+
+        @media (max-width: $bp-600) {
+            & {
+                height: 300px;
+
+                .title {
+                    top: 25%;
+                }
+            }
+            
+        }
+    }
+
+    
+    
+}
