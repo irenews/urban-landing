@@ -24,11 +24,11 @@ header nav #menu i {
   font-size: 1.8rem;
 }
 header #banner {
+  width: 100%;
+  height: 500px;
   background-image: url("/img/dk-verne-ho-banner.jpg");
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 500px;
   z-index: 99;
 }
 header #banner .title {
@@ -87,11 +87,11 @@ header #banner .title p {
   flex-direction: column;
   justify-content: space-around;
   align-items: start;
+  width: 300px;
+  height: 250px;
   padding: 10px 20px;
   position: relative;
   z-index: 10;
-  width: 300px;
-  height: 250px;
 }
 #cards .card-info h2 {
   padding: 20px 0;
@@ -102,9 +102,9 @@ header #banner .title p {
   position: absolute;
   left: 0;
   bottom: -2px;
+  background-color: #fff;
   width: 40%;
   height: 2px;
-  background-color: #fff;
 }
 #cards .card .box1 {
   position: absolute;
@@ -167,6 +167,7 @@ header #banner .title p {
 #info .info h2 {
   margin-bottom: 50px;
   font-size: 2rem;
+  text-transform: uppercase;
 }
 #info .info-p {
   display: flex;
@@ -184,6 +185,65 @@ header #banner .title p {
   width: 80%;
   padding: 0 30px;
   font-size: 1.2rem;
+}
+
+footer {
+  background-color: #2B2934;
+  min-height: 180px;
+}
+footer .footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+footer .footer .rrss {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer .rrss .round {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin: 5px;
+}
+footer .footer .rrss .round:hover {
+  cursor: pointer;
+  border: 2px solid #DB1526;
+}
+footer .footer .rrss .round:hover i {
+  color: #DB1526;
+}
+footer .footer .rrss .round i {
+  color: #fff;
+}
+footer .footer h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+footer .footer .cta {
+  color: #fff;
+  font-family: "Red Hat Display", sans-serif;
+  padding: 10px 20px;
+  border: 2px solid #DB1526;
+  cursor: pointer;
+  border-radius: 2px;
+}
+footer .footer .cta:hover {
+  color: #fff;
+  background-color: #DB1526;
 }
 
 /* Global */

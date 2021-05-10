@@ -1,4 +1,4 @@
-@mixin flex($justify:center, $align:center, $direction:row) {
+@mixin flex ($justify:center, $align:center, $direction:row) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: $direction;
@@ -12,4 +12,14 @@
     #{$top-or-bottom}: $positionY;
     width: $width;
     height: $height;
+}
+
+@mixin wh ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin xy ($xy) {
+    width: $xy;
+    height: $xy;
 }
