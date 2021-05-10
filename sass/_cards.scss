@@ -1,31 +1,56 @@
 #cards {
     color: $white;
     margin-top: -60px;
+    @include flex (space-between, center);
 
     .card {
-        padding: 20px;
-        width: 300px;
-        height: 250px;
         position: relative;
+        margin: 15px;
 
-        @include flex (space-around, start, column);
-
-        h2 {
-            padding: 20px 0;  
+         .info {
+            @include flex (space-around, start, column);
+            padding: 10px 20px;
             position: relative;
+            z-index: 10;
+            width: 300px;
+            height: 250px;
+
+            h2 {
+                padding: 20px 0;  
+                position: relative;
+            }
+            h2:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -2px;
+                width: 40%;
+                height: 2px;
+                background-color: $white;
+            }
         }
-        h2:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -2px;
-            width: 40%;
-            height: 2px;
-            background-color: $white;
+        .box1 {
+            @include box(left, -15px, top, -15px, 300px, 180px);
+            z-index: 5;
+
         }
+        .box2 {
+            @include box(right, -15px, bottom, -15px, 300px, 180px);
+            z-index: 5;
+
+        }
+
     }
-    .box::before {
-        @include box(left, -18px, top, -18px, 300px, 180px, $red);
-        z-index: -99;
+
+}
+@media (max-width: $bp-1000) {
+    #cards {
+        @include flex(center, center, column);
+        .card {
+            width: 70%;
+            .info{
+                width: 100%;
+            }
+        }
     }
 }
