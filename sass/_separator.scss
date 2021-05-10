@@ -1,0 +1,15 @@
+
+.separator {
+    @include flex();
+    margin: 20px 0;
+
+    .b-right {
+        border-right: 1px solid $red;
+        height: 80px;
+        
+    }
+    .b-left {
+        border-left: 1px solid $red;
+        height: 80px;
+    }
+}

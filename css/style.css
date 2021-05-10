@@ -138,6 +138,23 @@ header #banner .title p {
     width: 100%;
   }
 }
+.separator {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.separator .b-right {
+  border-right: 1px solid #DB1526;
+  height: 80px;
+}
+.separator .b-left {
+  border-left: 1px solid #DB1526;
+  height: 80px;
+}
+
 /* Global */
 * {
   margin: 0;
