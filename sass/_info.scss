@@ -1,0 +1,31 @@
+#info {
+    background-color: $light;
+    margin: 20px 0;
+    padding: 100px;
+
+    .info {
+        width: 70%;
+        margin: $m-auto;
+        
+        h2 {
+            margin-bottom: 50px;
+            font-size: $rem2;
+        }
+
+        &-p {
+            @include flex(space-between, start);
+            
+            .b-top {
+                border-top: 3px solid $red;
+                width: 20%;
+                margin-top: 10px;
+            }
+
+            p {
+                width: 80%;
+                padding: 0 30px;
+                font-size: $rem12;
+            }
+        }
+    }
+}

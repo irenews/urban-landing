@@ -81,7 +81,7 @@ header #banner .title p {
   position: relative;
   margin: 15px;
 }
-#cards .card .info {
+#cards .card-info {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -93,11 +93,11 @@ header #banner .title p {
   width: 300px;
   height: 250px;
 }
-#cards .card .info h2 {
+#cards .card-info h2 {
   padding: 20px 0;
   position: relative;
 }
-#cards .card .info h2:after {
+#cards .card-info h2:after {
   content: "";
   position: absolute;
   left: 0;
@@ -134,7 +134,7 @@ header #banner .title p {
   #cards .card {
     width: 70%;
   }
-  #cards .card .info {
+  #cards .card-info {
     width: 100%;
   }
 }
@@ -153,6 +153,37 @@ header #banner .title p {
 .separator .b-left {
   border-left: 1px solid #DB1526;
   height: 80px;
+}
+
+#info {
+  background-color: #f3f0f9;
+  margin: 20px 0;
+  padding: 100px;
+}
+#info .info {
+  width: 70%;
+  margin: 0 auto;
+}
+#info .info h2 {
+  margin-bottom: 50px;
+  font-size: 2rem;
+}
+#info .info-p {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+#info .info-p .b-top {
+  border-top: 3px solid #DB1526;
+  width: 20%;
+  margin-top: 10px;
+}
+#info .info-p p {
+  width: 80%;
+  padding: 0 30px;
+  font-size: 1.2rem;
 }
 
 /* Global */
