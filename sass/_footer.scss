@@ -47,4 +47,14 @@ footer {
                 }
         }
     }
+
+    @media (max-width: $bp-600) {
+        .footer {
+            @include flex(center, center, column);
+
+            > div {
+                margin: 25px 0;
+            }
+        }
+    }
 }
