@@ -1,0 +1,77 @@
+#icons {
+    margin: 50px auto;
+
+    .choose {
+        @include flex();
+        height: 600px;
+
+        .icons {
+            @include flex(center, start, column);
+            width: 60%;
+            height: 600px;
+            background-color: $light;
+            padding: 4%;
+
+            h2 {
+                text-transform: uppercase;
+                margin: 30px 0;
+            }
+
+            .icon {
+                @include flex(end, start);
+                margin: 20px 0;
+
+                i { 
+                    color: $red; 
+                    padding: 0 30px 0 50px;
+                }
+
+                div {
+                    width: 70%;
+                    h3 {
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .image {
+            width: 40%;
+            text-align: right;
+
+            img {
+                width: auto;
+                height: 600px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media (max-width: $bp-1000) {
+    #icons {
+        .choose {
+            height: auto;
+
+            .icons {
+                @include wh (80%, auto);
+
+                .icon {
+                    i{
+                        padding: 0 25px 0 20px;
+                    }
+                }
+            }
+            .image {
+                @include wh (80%, 250px);
+
+                img {
+                    @include wh (100%, 250px);
+                }
+            }
+        }
+    }
+}

@@ -66,15 +66,17 @@
                 margin-top: -50px;
                 justify-content: center;
 
-                .one, .three, .four {
+                .four {
                     margin: 0;
                 }
                 .three {
                     @include grid-item(span 1, span 2); 
+                    margin-right: 0;
+                    margin-left: 15px;
                 }
                 .box3 {
-                    left: 20px;
-                    width: 380px;
+                    left: 30px;
+                    width: 320px;
                 }
                 .box4 {
                     right: 20px;
@@ -88,6 +90,14 @@
         .bg {
             .grid {
                 @include grid(repeat(1, 85%), repeat(2, 1fr), 8px);
+
+                .one, .three {
+                    margin: 0;
+                }
+
+                .box3, .box4 {
+                    @include wh(280px, 220px);
+                }
             }
         }
     }

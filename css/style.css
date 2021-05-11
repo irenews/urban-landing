@@ -296,16 +296,18 @@ header #banner .title p {
     margin-top: -50px;
     justify-content: center;
   }
-  #gallery .bg .grid .one, #gallery .bg .grid .three, #gallery .bg .grid .four {
+  #gallery .bg .grid .four {
     margin: 0;
   }
   #gallery .bg .grid .three {
     grid-column: span 1;
     grid-row: span 2;
+    margin-right: 0;
+    margin-left: 15px;
   }
   #gallery .bg .grid .box3 {
-    left: 20px;
-    width: 380px;
+    left: 30px;
+    width: 320px;
   }
   #gallery .bg .grid .box4 {
     right: 20px;
@@ -319,8 +321,92 @@ header #banner .title p {
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 8px;
   }
+  #gallery .bg .grid .one, #gallery .bg .grid .three {
+    margin: 0;
+  }
+  #gallery .bg .grid .box3, #gallery .bg .grid .box4 {
+    width: 280px;
+    height: 220px;
+  }
 }
 
+#icons {
+  margin: 50px auto;
+}
+#icons .choose {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+#icons .choose .icons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 60%;
+  height: 600px;
+  background-color: #f3f0f9;
+  padding: 4%;
+}
+#icons .choose .icons h2 {
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+#icons .choose .icons .icon {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: end;
+  align-items: start;
+  margin: 20px 0;
+}
+#icons .choose .icons .icon i {
+  color: #DB1526;
+  padding: 0 30px 0 50px;
+}
+#icons .choose .icons .icon div {
+  width: 70%;
+}
+#icons .choose .icons .icon div h3 {
+  margin-bottom: 10px;
+}
+#icons .choose .icons .icon div p {
+  font-weight: 500;
+}
+#icons .choose .image {
+  width: 40%;
+  text-align: right;
+}
+#icons .choose .image img {
+  width: auto;
+  height: 600px;
+  object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+  #icons .choose {
+    height: auto;
+  }
+  #icons .choose .icons {
+    width: 80%;
+    height: auto;
+  }
+  #icons .choose .icons .icon i {
+    padding: 0 25px 0 20px;
+  }
+  #icons .choose .image {
+    width: 80%;
+    height: 250px;
+  }
+  #icons .choose .image img {
+    width: 100%;
+    height: 250px;
+  }
+}
 footer {
   background-color: #2B2934;
   min-height: 180px;
