@@ -1,0 +1,19 @@
+#grid {
+    .grid {
+        @include grid(repeat(auto-fit, minmax(320px, 320px)), repeat(4, 280px), 10px);
+        justify-content: center;
+        
+        &-item {
+            background-color: $red;
+
+            &:nth-child(3) {
+                grid-column: 1;
+            }
+            &:nth-child(6) {
+                grid-column: 2;
+            }
+        }
+
+        
+    }
+}

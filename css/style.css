@@ -407,6 +407,23 @@ header #banner .title p {
     height: 250px;
   }
 }
+#grid .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
+  grid-template-rows: repeat(4, 280px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+#grid .grid-item {
+  background-color: #DB1526;
+}
+#grid .grid-item:nth-child(3) {
+  grid-column: 1;
+}
+#grid .grid-item:nth-child(6) {
+  grid-column: 2;
+}
+
 footer {
   background-color: #2B2934;
   min-height: 180px;
