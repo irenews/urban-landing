@@ -1,10 +1,21 @@
 #grid {
+    position: relative;
+    margin: 100px 0 0;
+    ;
+    .bg-grid {
+        @include xy(900px);
+        position: absolute;
+        background-image: linear-gradient($red, $red);
+        top: -200px;
+        right: 0;
+        z-index: -1;
+    }
     .grid {
-        @include grid(repeat(auto-fit, minmax(320px, 320px)), repeat(4, 280px), 10px);
+        @include grid(repeat(3, 320px), repeat(4, 280px), 10px);
         justify-content: center;
         
         &-item {
-            background-color: $red;
+            background-color: $light-violet;
 
             &:nth-child(3) {
                 grid-column: 1;
@@ -12,8 +23,40 @@
             &:nth-child(6) {
                 grid-column: 2;
             }
-        }
+            &:nth-child(8) {
+                
+            }
 
+            img {
+                object-fit: cover;
+            }
+        }
+ 
+    }
+}
+@media (max-width: $bp-1000) {
+    #grid {
+        .bg-grid {
+            @include wh (60%, 1000px);
+        }
+        .grid {
+            grid-template-columns: repeat(2, 320px);
+            grid-template-rows: repeat(5, 320px);
+        }    
+    }
+}
+
+@media (max-width: 650px) {
+    #grid {
+        .grid {
+            grid-template-columns:320px;
+            grid-template-rows: repeat(10, 320px);
+            &-item {
+                &:nth-child(6) {
+                    grid-column: 1;
+                }
+            }
+        }
         
     }
 }
