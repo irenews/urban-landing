@@ -1,11 +1,14 @@
 #info {
     background-color: $light;
-    margin: 20px 0;
+    margin: 20px 0 0;
     padding: 100px;
+    min-height: 500px;
 
     .info {
         width: 70%;
+        max-width: $bp-960;
         margin: $m-auto;
+        text-align: left;
         
         h2 {
             margin-bottom: 50px;
@@ -27,6 +30,29 @@
                 padding: 0 30px;
                 font-size: $rem12;
             }
+            
+        }      
+    }        
+}
+@media (max-width: $bp-600) {
+    #info  {
+        padding: 50px 50px 100px;
+        
+        .info {
+            width: 90%;
+            text-align: center;
+
+            &-p {
+                @include flex(space-between, start, column);
+                .b-top {
+                    align-self: center;
+                }
+                p {
+                    width: 100%;
+                    padding: 30px;
+                }
+            }
         }
     }
+    
 }

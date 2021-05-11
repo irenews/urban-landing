@@ -1,0 +1,95 @@
+#gallery {
+    background-color: $violet;
+    width: $p100;
+    min-height: 800px;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+
+    .bg {
+        @include flex();
+
+        .grid {
+            @include grid(repeat(3, 33%), repeat(3, 1fr), 8px);
+            max-width: $bp-1000;
+            min-height: 550px;
+            margin-top: -120px;
+            position: relative;
+
+            div img {
+                @include wh($p100, $p100);
+                object-fit: cover;
+            }
+
+            .one, .two, .three, .four, .five {
+                @include flex(start, center);
+                position: relative;
+                z-index: 10;   
+            }
+            .one, .two {
+                @include grid-item(span 1, span 2);
+            }
+    
+            .three {
+                @include grid-item(span 1, span 3); 
+                margin-right: 15px;
+            }
+
+            .one, .four {
+                margin-left: 15px;
+            }
+            .three, .four {
+                padding: 20px;
+
+                .info {
+                    h2 {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            .box3 {
+                @include box(left, -3px, bottom, -15px, 300px, 300px);
+                background-color: $light-violet;
+                z-index: 5;
+            }
+            .box4 {
+                @include box(right, -3px, top, -15px, 400px, 350px);
+                background-color: $red;
+                z-index: 5;
+            }
+        }
+    }
+    @media (max-width: $bp-1000) {
+        .bg {
+            .grid {
+                @include grid(repeat(2, 45%), repeat(4, 1fr), 8px);
+                margin-top: -50px;
+                justify-content: center;
+
+                .one, .three, .four {
+                    margin: 0;
+                }
+                .three {
+                    @include grid-item(span 1, span 2); 
+                }
+                .box3 {
+                    left: 20px;
+                    width: 380px;
+                }
+                .box4 {
+                    right: 20px;
+                    width: 380px;
+                }
+            }
+
+        }
+    }
+    @media (max-width: $bp-600) {
+        .bg {
+            .grid {
+                @include grid(repeat(1, 85%), repeat(2, 1fr), 8px);
+            }
+        }
+    }
+    
+}

@@ -6,6 +6,18 @@
     align-items: $align;
 }
 
+@mixin grid ($cols, $rows, $gap: 0) {
+    display: grid;
+    grid-template-columns: $cols;
+    grid-template-rows: $rows;
+    grid-gap: $gap;
+}
+
+@mixin grid-item ($g-col, $g-row) {
+    grid-column: $g-col;
+    grid-row: $g-row;
+}
+
 @mixin box ($left-or-right, $positionX, $top-or-bottom, $positionY, $width, $height) {
     position: absolute;
     #{$left-or-right}: $positionX;

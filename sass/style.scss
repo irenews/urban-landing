@@ -4,6 +4,7 @@
 @import 'cards';
 @import 'separator';
 @import 'info';
+@import 'gallery';
 @import 'footer';
 
 /* Global */
@@ -21,9 +22,11 @@ body {
     max-width: $bp-1000;
     margin: $m-auto;
 }
-
-.bg-black {
-    background-color: $black;
+.c-white {
+    color: $white;
+}
+.bg-light {
+    background-color: $light;
 }
 .bg-red {
     background-color: $red;
@@ -34,5 +37,11 @@ body {
 .bg-light-violet {
     background-color: $light-violet;
 }
+.bg-black {
+    background-color: $black;
+}
 
+main {
+    position: relative;
+}
 
