@@ -138,7 +138,7 @@ header #banner .title p {
     width: 100%;
   }
 }
-.separator {
+.divider {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -146,11 +146,11 @@ header #banner .title p {
   align-items: center;
   margin: 20px 0;
 }
-.separator .b-right {
+.divider .b-right {
   border-right: 1px solid #DB1526;
   height: 80px;
 }
-.separator .b-left {
+.divider .b-left {
   border-left: 1px solid #DB1526;
   height: 80px;
 }
@@ -518,6 +518,57 @@ header #banner .title p {
   }
 }
 
+#services {
+  background-color: #37334E;
+  margin: 50px auto;
+  padding: 50px 20px 120px;
+}
+#services h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin: 20px auto;
+}
+#services .services {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#services .services .service {
+  color: #fff;
+  padding: 20px 15px;
+  width: 320px;
+}
+#services .services .service .icon {
+  color: #DB1526;
+  padding: 15px 0;
+}
+#services .services .service .icon i {
+  font-size: 2.8rem;
+}
+#services .services .service h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#services .services .service:first-child {
+  margin-top: -100px;
+}
+#services .services .service:last-child {
+  margin-bottom: -100px;
+}
+@media (max-width: 1000px) {
+  #services .services .service:first-child, #services .services .service:last-child {
+    margin: 0;
+  }
+}
+@media (max-width: 678px) {
+  #services .services .service {
+    text-align: center;
+  }
+}
+
 footer {
   background-color: #2B2934;
   min-height: 180px;
@@ -599,6 +650,10 @@ footer .footer .cta:hover {
 body {
   font-family: "Barlow Condensed", sans-serif;
   color: #2B2934;
+}
+
+h2 {
+  font-size: 26px;
 }
 
 .img-fluid {

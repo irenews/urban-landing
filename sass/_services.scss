@@ -1,0 +1,56 @@
+#services {
+    background-color: $violet;
+    margin: 50px auto;
+    padding: 50px 20px 120px;
+
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        color: $white;
+        margin: 20px auto;
+    }
+    .services {
+        @include flex();
+
+        .service {
+            color: $white;
+            padding: 20px 15px;
+            width: 320px;
+    
+            .icon {
+                color: $red;
+                padding: 15px 0;
+                i {
+                    font-size: $rem28;
+                }
+                
+            }
+            h3 {
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+
+            &:first-child {
+                margin-top: -100px;
+            }
+
+            &:last-child {
+                margin-bottom: -100px;
+            }
+        }
+        @media (max-width: $bp-1000) {
+            .service {
+                &:first-child, &:last-child {
+                    margin: 0;
+                } 
+            }
+        }
+        @media (max-width: 678px) {
+            .service {
+                text-align: center;
+            }
+        }
+
+    }
+
+}

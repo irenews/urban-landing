@@ -2,12 +2,13 @@
 @import 'mixins';
 @import 'header';
 @import 'cards';
-@import 'separator';
+@import 'divider';
 @import 'info';
 @import 'gallery';
 @import 'icons';
 @import 'grid';
 @import 'numbers';
+@import 'services';
 @import 'footer';
 
 /* Global */
@@ -15,6 +16,10 @@
 body { 
     font-family: $font;
     color: $black;
+}
+
+h2 {
+    font-size: 26px;
 }
 
 .img-fluid {
