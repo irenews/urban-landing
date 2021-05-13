@@ -427,14 +427,33 @@ header #banner .title p {
   grid-gap: 10px;
   justify-content: center;
 }
-#grid .grid-item {
-  background-color: #b8b5c7;
-}
 #grid .grid-item:nth-child(3) {
   grid-column: 1;
 }
 #grid .grid-item:nth-child(6) {
   grid-column: 2;
+}
+#grid .grid-item:nth-child(8) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  background: #fff;
+  padding: 5px;
+}
+#grid .grid-item:nth-child(8) h2 {
+  padding: 20px 0;
+  position: relative;
+}
+#grid .grid-item:nth-child(8) h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  background-color: #2B2934;
+  width: 40%;
+  height: 2px;
 }
 #grid .grid-item img {
   object-fit: cover;
@@ -447,13 +466,13 @@ header #banner .title p {
   }
   #grid .grid {
     grid-template-columns: repeat(2, 320px);
-    grid-template-rows: repeat(5, 320px);
+    grid-template-rows: repeat(5, 280px);
   }
 }
 @media (max-width: 650px) {
   #grid .grid {
     grid-template-columns: 320px;
-    grid-template-rows: repeat(10, 320px);
+    grid-template-rows: repeat(10, 280px);
   }
   #grid .grid-item:nth-child(6) {
     grid-column: 1;
