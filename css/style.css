@@ -26,7 +26,7 @@ header nav #menu i {
 header #banner {
   width: 100%;
   height: 500px;
-  background-image: url("/img/dk-verne-ho-banner.jpg");
+  background-image: url("https://raw.githubusercontent.com/irenews/urban-landing/master/img/dk-verne-ho-banner.jpg");
   background-size: cover;
   background-position: center;
   z-index: 99;
