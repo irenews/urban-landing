@@ -34,17 +34,7 @@ footer {
         }
 
         .cta {
-            color: $white;
-            font-family: $h1;
-            padding: 10px 20px;
-            border: 2px solid $red;
-            cursor: pointer;
-            border-radius: 2px;
-
-                &:hover{
-                    color: $white;
-                    background-color: $red;
-                }
+            @include cta($white);
         }
     }
 

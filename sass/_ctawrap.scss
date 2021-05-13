@@ -1,0 +1,50 @@
+#ctawrap {
+    margin-bottom: 20px;
+
+    .cta-wrap {
+        @include flex();
+        .img {
+            position: relative;
+            width: 350px;
+            margin-top: -150px;
+
+            img {
+                width: $p100;
+            }
+            .box5 {
+                @include box(right, -20px, bottom, -30px, 200px, 300px);
+                background-color: $red;
+                z-index: -1;
+            }
+        }
+
+        .text {
+            max-width: 60%;
+            min-width: 40%;
+            padding: 20px;
+            padding-left: 80px;
+            text-align: left;
+
+            h2 {
+                text-transform: uppercase;
+                margin: 40px 0 20px;
+            }
+            .cta {
+                @include cta($black);
+                width: 150px;
+                margin: 20px 0;
+            }
+        }
+        @media (max-width: 874px) {
+            .text {
+                width: 90%;
+                text-align: center;
+                padding-left: 20px;
+
+                .cta {
+                   margin: 20px auto;
+                }
+            }
+        }
+    }
+}
