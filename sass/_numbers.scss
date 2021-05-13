@@ -1,0 +1,36 @@
+#numbers {
+    .numbers {
+        margin: 50px auto;
+
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+            margin: 50px auto 20px;
+        }
+        .flex {
+            @include flex(space-around, center);
+
+            .number {
+                @include flex(center, center, column);
+                margin: 20px;
+
+                &-item {
+                    color: $red;
+                    font-family: $h1;
+                    font-size: 50px;
+                    font-weight: 700;
+                }
+                &-text {
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-align: center;
+                }
+            }
+            @media (max-width: $bp-960){
+                .number {
+                    flex: 0 0 30%;
+                }
+            }
+        }
+    }
+}

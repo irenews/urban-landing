@@ -478,6 +478,46 @@ header #banner .title p {
     grid-column: 1;
   }
 }
+#numbers .numbers {
+  margin: 50px auto;
+}
+#numbers .numbers h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px auto 20px;
+}
+#numbers .numbers .flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#numbers .numbers .flex .number {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+#numbers .numbers .flex .number-item {
+  color: #DB1526;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+}
+#numbers .numbers .flex .number-text {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+@media (max-width: 960px) {
+  #numbers .numbers .flex .number {
+    flex: 0 0 30%;
+  }
+}
+
 footer {
   background-color: #2B2934;
   min-height: 180px;
