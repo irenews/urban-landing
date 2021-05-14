@@ -62,7 +62,7 @@ header #banner .title p {
     font-size: 14px;
   }
 }
-@media (max-width: 960px) and (max-width: 400px) {
+@media (max-width: 960px) and (max-width: 500px) {
   header #banner .title h1 {
     font-size: 2rem;
     line-height: 2rem;
@@ -144,7 +144,7 @@ header #banner .title p {
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #cards {
     margin-top: -30px;
   }
