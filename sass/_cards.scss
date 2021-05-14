@@ -55,3 +55,14 @@
         }
     }
 }
+@media (max-width: 400px) {
+    #cards {
+        margin-top: -30px;
+        .card {
+            .box1 {
+                @include wh (150px, 150px);
+    
+            }
+        }
+    }
+}
